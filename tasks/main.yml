@@ -44,6 +44,7 @@
     owner: "{{ wildfly_user }}"
     group: "{{ wildfly_user }}"
     creates: "{{ wildfly_prefix }}/{{ wildfly_basename }}"
+    copy: no
 
 - name: create symlink
   file:
