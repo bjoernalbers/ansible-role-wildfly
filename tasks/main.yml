@@ -1,5 +1,5 @@
 ---
-- include: clean.yml
+- import_tasks: clean.yml
   when: wildfly_reinstall
 
 - name: install packages
