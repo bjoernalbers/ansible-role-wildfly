@@ -1,8 +1,8 @@
 ---
 # These two veriables have to be updated together for every new release
 # (the latter is the SHA-1 checksum of WildFly zip archive)!
-wildfly_version: "10.1.0.Final"
-wildfly_checksum: "sha1:5ea0a70a483a4beaf327faeaf0a391208d33d4bd"
+wildfly_version: "11.0.0.Final"
+wildfly_checksum: "sha1:ba2ba501f63dc957e69eaefbd2fe10f7aa6f61ae"
 
 # The configuration you want to run
 wildfly_config: standalone.xml
