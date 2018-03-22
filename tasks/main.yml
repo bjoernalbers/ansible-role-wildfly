@@ -102,4 +102,4 @@
   service:
     name: "wildfly"
     enabled: yes
-    state: running
+    state: started
