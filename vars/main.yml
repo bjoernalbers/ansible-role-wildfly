@@ -1,9 +1,4 @@
 ---
-# Required packages to install and run WildFly
-wildfly_packages:
-  - unzip
-  - default-jdk
-
 # Name of system user / group
 wildfly_user: "wildfly"
 
