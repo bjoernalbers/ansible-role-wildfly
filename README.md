@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/bjoernalbers/ansible-role-wildfly.svg?branch=master)](https://travis-ci.org/bjoernalbers/ansible-role-wildfly)
 
 Install [WildFly Application Server](http://wildfly.org) along with OpenJDK on
-Ubuntu.
+Ubuntu / openSUSE.
 
-I've developed and tested with Ansible 2.2 on Ubuntu 16.04.
+I've developed and tested with Ansible 2.2 on Ubuntu 16.04 and openSUSE 13.
 Other versions should work as well (please let me know so that I can update the
 supported platforms!)
 
@@ -19,7 +19,7 @@ Your host must have internet access in order to download the WildFly archive.
 
 ### Installed version
 
-WildFly v10.1.0 gets installed by default:
+Define which version to install (default: WildFly 11):
 
 ```yaml
 wildfly_version: "10.1.0.Final"
