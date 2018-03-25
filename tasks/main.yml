@@ -82,19 +82,19 @@
   notify: restart wildfly
 
 - name: copy systemd service
-  copy:
-    src: "{{ wildfly_home }}/docs/contrib/scripts/systemd/wildfly.service"
-    remote_src: yes
+  template:
+    src: wildfly.service.j2
     dest: "/etc/systemd/system/wildfly.service"
     owner: root
     group: root
     mode: 0644
-  notify: restart wildfly
+  notify:
+    - reload systemd
+    - restart wildfly
 
 - name: copy systemd script
-  copy:
-    src: "{{ wildfly_home }}/docs/contrib/scripts/systemd/launch.sh"
-    remote_src: yes
+  template:
+    src: launch.sh.j2
     dest: "{{ wildfly_home }}/bin/launch.sh"
     owner: "{{ wildfly_user }}"
     group: "{{ wildfly_user }}"
