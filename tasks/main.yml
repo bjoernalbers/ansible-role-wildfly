@@ -56,14 +56,6 @@
     group: "{{ wildfly_user }}"
     creates: "{{ wildfly_prefix }}/{{ wildfly_basename }}"
 
-- name: create symlink
-  file:
-    src: "{{ wildfly_home }}"
-    dest: "{{ wildfly_prefix }}/wildfly"
-    owner: "{{ wildfly_user }}"
-    group: "{{ wildfly_user }}"
-    state: link
-
 - name: create config directory
   file:
     path: "/etc/wildfly"
